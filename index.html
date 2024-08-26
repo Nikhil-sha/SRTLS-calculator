@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz App</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex items-center justify-center">
+	<div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
+		<h2 class="text-3xl font-extrabold mb-8 text-center text-indigo-600">SRTLS Calculator</h2>
+
+		<div id="form" class="grid grid-cols-2 grid-rows-3 gap-6">
+			<!-- Question 1 -->
+			<div class="col-span-1">
+				<label for="skill" class="block text-gray-700 font-semibold mb-2">Skill:</label>
+				<input id="skill" name="skill" type="number" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-300 rounded-xl py-3 px-4 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300" placeholder="0-100">
+			</div>
+
+			<!-- Question 2 -->
+			<div class="col-span-1">
+				<label for="resource" class="block text-gray-700 font-semibold mb-2">Resource:</label>
+				<input id="resource" name="resource" type="number" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-300 rounded-xl py-3 px-4 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300" placeholder="0-100">
+			</div>
+
+			<!-- Question 3 -->
+			<div class="col-span-1">
+				<label for="time" class="block text-gray-700 font-semibold mb-2">Time:</label>
+				<input id="time" name="time" type="number" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-300 rounded-xl py-3 px-4 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300" placeholder="Your age">
+			</div>
+
+			<!-- Question 4 -->
+			<div class="col-span-1">
+				<label for="luck" class="block text-gray-700 font-semibold mb-2">Luck:</label>
+				<input id="luck" name="luck" type="number" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-300 rounded-xl py-3 px-4 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300" placeholder="1-10">
+			</div>
+
+			<!-- Question 5 -->
+			<div class="col-span-1">
+				<label for="support" class="block text-gray-700 font-semibold mb-2">Support:</label>
+				<input id="support" name="support" type="number" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-300 rounded-xl py-3 px-4 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300" placeholder="0-100">
+			</div>
+
+			<!-- Calculate Button -->
+			<button id="calculate-button" class="col-span-2 bg-indigo-600 text-white font-bold py-3 px-6 rounded-xl hover:bg-indigo-700 hover:shadow-lg transition duration-300 ease-in-out w-full">Calculate</button>
+		</div>
+
+		<!-- Result -->
+		<div id="result" class="hidden mt-8 text-center text-2xl font-bold text-gray-800"></div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
